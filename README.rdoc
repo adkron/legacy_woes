@@ -1,0 +1,22 @@
+= Legacy Woes
+
+If your working with 
+
+== Install
+
+  gem install adkron-legacy_woes --source http://gems.github.com
+  
+  In Rails you can instead add this to your environment.rb file
+  config.gem "adkron-legacy_woes", :lib => 'legacy_woes', :source => 'http://gems.github.com'
+
+== Example
+
+    require 'rubygems'
+    require 'legacy_woes'
+
+    class LegacyComments < ActiveRecord::Base
+      created_at_column :datesubmitted
+    end
+
+
+**Copyright (c) 2008 Amos L. King, released under the MIT license**
