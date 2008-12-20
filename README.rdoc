@@ -2,12 +2,16 @@
 
 If your working with 
 
-== Install
+== Install as a gem
 
   gem install adkron-legacy_woes --source http://gems.github.com
   
   In Rails you can instead add this to your environment.rb file
   config.gem "adkron-legacy_woes", :lib => 'legacy_woes', :source => 'http://gems.github.com'
+
+== Install as a plugin
+  
+  script/plugin install git://github.com/adkron/legacy_woes.git
 
 == Example
 
