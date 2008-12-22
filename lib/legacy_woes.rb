@@ -23,14 +23,8 @@ module LegacyWoes
           end
         end
         EOB
-         
-      define_method :created_at do
-        send(legacy_column_name)
-      end
-    
-      define_method :created_at= do |value|
-        send('#{legacy_column_name}=', value)
-      end
+      
+      alias_attribute :created_at, legacy_colun_name
       alias_method_chain :write_attribute, "#{legacy_column_name}_created_at"
     end
     
@@ -47,13 +41,7 @@ module LegacyWoes
         end
         EOB
          
-      define_method :updated_at do
-        send(legacy_column_name)
-      end
-    
-      define_method :updated_at= do |value|
-        send('#{legacy_column_name}=', value)
-      end
+      alias_attribute :updated_at, legacy_colun_name
       alias_method_chain :write_attribute, "#{legacy_column_name}_updated_at"
     end
   end
