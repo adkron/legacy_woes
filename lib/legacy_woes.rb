@@ -24,7 +24,7 @@ module LegacyWoes
         end
         EOB
       
-      alias_attribute :created_at, legacy_colun_name
+      alias_attribute :created_at, legacy_column_name
       alias_method_chain :write_attribute, "#{legacy_column_name}_created_at"
     end
     
@@ -41,7 +41,7 @@ module LegacyWoes
         end
         EOB
          
-      alias_attribute :updated_at, legacy_colun_name
+      alias_attribute :updated_at, legacy_column_name
       alias_method_chain :write_attribute, "#{legacy_column_name}_updated_at"
     end
   end
