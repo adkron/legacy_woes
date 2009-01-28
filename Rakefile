@@ -3,7 +3,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('legacy_woes', '0.1.2') do |p|
+Echoe.new('legacy_woes', '0.2.0') do |p|
   p.description    = 'Tools for legacy databases and ActiveRecord'
   p.url            = 'http://github.com/adkron/legacy_woes'
   p.author         = 'Amos King'

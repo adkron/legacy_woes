@@ -2,18 +2,18 @@
 
 Gem::Specification.new do |s|
   s.name = %q{legacy_woes}
-  s.version = "0.1.2"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Amos King"]
-  s.date = %q{2008-12-22}
+  s.date = %q{2009-01-28}
   s.description = %q{Tools for legacy databases and ActiveRecord}
   s.email = %q{amos.l.king@gmail.com}
-  s.extra_rdoc_files = ["lib/legacy_woes.rb", "README.rdoc"]
-  s.files = ["lib/legacy_woes.rb", "Manifest", "MIT-LICENSE", "Rakefile", "README.rdoc", "legacy_woes.gemspec"]
+  s.extra_rdoc_files = ["CHANGELOG.rdoc", "lib/legacy_woes.rb", "README.rdoc"]
+  s.files = ["CHANGELOG.rdoc", "lib/legacy_woes.rb", "Manifest", "MIT-LICENSE", "Rakefile", "README.rdoc", "legacy_woes.gemspec", "CHANGELOG.rdoc"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/adkron/legacy_woes}
-  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Legacy_woes", "--main", "README.rdoc"]
+  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Legacy_woes", "--main", "README.rdoc", "CHANGELOG.rdoc", "MIT-LICENSE"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{legacy_woes}
   s.rubygems_version = %q{1.3.1}

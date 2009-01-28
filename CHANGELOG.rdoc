@@ -1,0 +1,11 @@
+= 0.2.0
+  * create_on_colum(Amos King)
+  * updated_on_colum(Amos King)
+  * condensed backend code to make it easy to add new column methods(Amos King)
+
+= 0.1.2
+  * clean up code(Amos King)
+
+= 0.1.0
+  * created_at_column(Amos King)
+  * updated_at_column(Amos King)
