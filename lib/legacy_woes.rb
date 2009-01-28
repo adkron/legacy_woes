@@ -14,7 +14,7 @@ module LegacyWoes
     # Sets the created_at column.
     # Also defines methods for created_at and created_at=.
     def created_at_column(legacy_column_name)
-      setup_legacy_method(legacy_column_name, :created_at:)
+      setup_legacy_method(legacy_column_name, :created_at)
     end
     
     # Sets the updated_at column.
@@ -26,7 +26,7 @@ module LegacyWoes
     # Sets the created_on column.
     # Also defines methods for created_on and created_on=.
     def created_on_column(legacy_column_name)
-      setup_legacy_method(legacy_column_name, :created_on:)
+      setup_legacy_method(legacy_column_name, :created_on)
     end
     
     # Sets the updated_on column.
@@ -35,7 +35,7 @@ module LegacyWoes
       setup_legacy_method(legacy_column_name, :updated_on)
     end
     
-    def self.setup_legacy_method(legacy_column_name, replacement_column)
+    def setup_legacy_method(legacy_column_name, replacement_column)
       module_eval <<-EOB
         def write_attribute_with_#{legacy_column_name}_#{replacement_column}(name, value, &block)
           if name == '#{replacement_column}'
